@@ -16,6 +16,9 @@ public class Recipe {
     private String url;
     private String directions;
 
+    @Enumerated(value = EnumType.STRING)
+    private Difficulty difficulty;
+
     @Lob
     private Byte[] image;
 
